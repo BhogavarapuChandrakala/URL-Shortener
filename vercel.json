@@ -1,7 +1,15 @@
 {
-  "functions": {
-    "server.js": {
-      "maxDuration": 10 // Increase the timeout if needed, 10 seconds is default
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
 }
