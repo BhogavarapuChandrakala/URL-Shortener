@@ -34,7 +34,7 @@ app.get('/:shortUrl', async (req, res) => {
 });
 
 // Use a different port if 4400 is unavailable
-const PORT = process.env.PORT || 4240;
+const PORT = process.env.PORT || 4250;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
